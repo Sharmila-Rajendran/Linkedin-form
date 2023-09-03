@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Signup in Linkedin</title>
+    <style>
+      body {
+        background-color: rgb(238, 238, 238);
+        background-image: url(https://images.pexels.com/photos/255379/pexels-photo-255379.jpeg?cs=srgb&dl=pexels-miguel-%C3%A1-padri%C3%B1%C3%A1n-255379.jpg&fm=jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        height: 100%;
+      }
+      .con {
+        border: 5px solid black;
+        border-radius: 10px;
+        padding: 10px;
+        margin: auto;
+        width: 400px;
+        height: 900px;
+        background-color: transparent;
+        /*background-image: linear-gradient(to top, #a8edea 0%, #fed6e3 100%);*/
+        box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.2);
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 15px;
+      }
+      h1 {
+        text-align: center;
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 35px;
+        color:black;
+        text-shadow: 2px 2px 2px white;
+      }
+      .inp {
+        width: 350px;
+        padding: 10px;
+        margin: 10px;
+        border: 1px solid black;
+        border-radius: 10px;
+      }
+      select{
+        width: 350px;
+        padding: 10px;
+        margin: 10px;
+        border: 1px solid black;
+        border-radius: 10px;
+        font-family: Arial, Helvetica, sans-serif;
+      }
+      label {
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 15px;
+        margin: 10px 0;
+        text-align: left;
+        width: 350px;
+        padding: 10px;
+        color: rgb(0, 0, 0);
+        cursor: pointer;
+        text-decoration: none;
+      }
+      input[type=submit]{
+        width: 350px;
+        padding: 10px;
+        margin: 10px;
+        border: 1px solid black;
+        border-radius: 10px;
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 15px;
+        color:white;
+        background-color: rgb(0, 81, 255);
+        cursor: pointer;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="con">
+      <h1>Sign up</h1>
+      <form action="login.html">
+        <input
+          class="inp"
+          type="text"
+          name="fn"
+          placeholder="First Name" required
+        /><br />
+        <input
+          class="inp"
+          type="text"
+          name="mn"
+          placeholder="Middle Name" 
+        /><br />
+        <input
+          class="inp"
+          type="text"
+          name="ln"
+          placeholder="Last Name" required
+        /><br />
+        <input
+          class="inp"
+          type="number"
+          name="num"
+          placeholder="Phone Number" required
+        /><br />
+        <input
+          class="inp"
+          type="email"
+          name="mail"
+          placeholder="Email-ID" required
+        /><br />
+        <input
+          class="inp"
+          type="password"
+          name="pass"
+          placeholder=" Create Password" required
+        /><br />
+        <input
+          class="inp"
+          type="password"
+          name="pass"
+          placeholder=" Confirm Password" required
+        /><br />
+        <input class="inp" type="date" name="dob" required/><br>
+        <label for="gender">Gender</label><br>
+        <div>
+          <input type="radio" name="gender" id="male" />
+          <label for="male">Male</label>
+          <input type="radio" name="gender" id="female" />
+          <label for="female">Female</label>
+          <input type="radio" name="gender" id="others" />
+          <label for="others">Others</label><br>
+        </div><br>
+
+        <select>
+          <option value="country">Select</option>
+          <option value="india">India</option>
+          <option value="usa">USA</option>
+          <option value="australia">Australia</option>
+          <option value="canada">Canada</option>
+          <option value="japan">Japan</option>
+          <option value="china">China</option></select
+        ><br /><br />
+        <label for="Qualification">Graduation</label><br /><br />
+        <input type="checkbox" name="qualification" >Bachelor's Degree<br /><br />
+        <input type="checkbox" name="qualification" >Master's Degree<br /><br />
+        <input type="checkbox" name="qualification" >Diploma<br /><br />
+        <input type="submit" value="Sign In">
+    </form>
+    </div>
+  </body>
+</html>
